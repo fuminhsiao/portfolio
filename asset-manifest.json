@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.f3783403.css",
+    "main.js": "/portfolio/static/js/main.1e2fa1cf.js",
+    "static/media/1.gif": "/portfolio/static/media/1.baf2b1a77b5f984b8a3a.gif",
+    "static/media/CormorantGaramond-Regular.ttf": "/portfolio/static/media/CormorantGaramond-Regular.4114a151797af532cace.ttf",
+    "static/media/Sticky.png": "/portfolio/static/media/Sticky.d9d2e8da2e926d5a90f2.png",
+    "static/media/whiteboard.jpg": "/portfolio/static/media/whiteboard.9c02ca91b2697c520633.jpg",
+    "static/media/2.gif": "/portfolio/static/media/2.023ed2970f083f6ad392.gif",
+    "static/media/CormorantGaramond-SemiBoldItalic.ttf": "/portfolio/static/media/CormorantGaramond-SemiBoldItalic.d9cb5d748f7c00c0689b.ttf",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/portfolio/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
+    "static/media/pic4.jpg": "/portfolio/static/media/pic4.ac2d331ad0fcf72c4a89.jpg",
+    "static/media/pic3.jpg": "/portfolio/static/media/pic3.df5f3fa773b05667d75e.jpg",
+    "static/media/Philosopher-Regular.ttf": "/portfolio/static/media/Philosopher-Regular.93c7d8b5efe3f355f3ca.ttf",
+    "static/media/helvetica-neu.ttf": "/portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff2": "/portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/CoolveticaRg-Regular.woff2": "/portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/portfolio/index.html",
+    "main.f3783403.css.map": "/portfolio/static/css/main.f3783403.css.map",
+    "main.1e2fa1cf.js.map": "/portfolio/static/js/main.1e2fa1cf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3783403.css",
+    "static/js/main.1e2fa1cf.js"
+  ]
+}
