@@ -1,0 +1,380 @@
+[
+    {
+        "id": 1,
+        "title": "UCEA Website Redesign",
+        "description": "As a UX designer, I collaborated with the University Council for Educational Administration (UCEA) to redesign their website. Previously, UCEA engaged MemberLeap to revamp the site, but significant issues with the website's infrastructure and content organization persisted. The project involved rebuilding the information architecture and designing an improved user experience, including layout and navigation, to create a more intuitive and user-friendly website. This initiative required leveraging UX design expertise to address complex challenges and deliver a solution that met the client's needs. This project stands as a testament to delivering impactful UX design solutions.",
+        "showcases": [
+            {
+                "id": 1,
+                "image": "/media/showcase_images/Frame_11_2_tzsiQJ9.png",
+                "link": "https://www.ucea.org/"
+            }
+        ],
+        "tags": [
+            {
+                "id": 1,
+                "name": "# UX Research"
+            },
+            {
+                "id": 2,
+                "name": "# UX Design"
+            },
+            {
+                "id": 3,
+                "name": "# Website Development"
+            }
+        ],
+        "design_processes": [
+            {
+                "id": 1,
+                "steps": [
+                    {
+                        "id": 1,
+                        "name": "Define Problem",
+                        "order": 1
+                    },
+                    {
+                        "id": 2,
+                        "name": "Gather Data",
+                        "order": 2
+                    },
+                    {
+                        "id": 7,
+                        "name": "Construct IA",
+                        "order": 3
+                    },
+                    {
+                        "id": 4,
+                        "name": "Prototype",
+                        "order": 4
+                    },
+                    {
+                        "id": 5,
+                        "name": "Develop",
+                        "order": 5
+                    }
+                ]
+            }
+        ],
+        "pages": [
+            {
+                "id": 1,
+                "title": "Define Problems",
+                "text_layers": [
+                    {
+                        "id": 1,
+                        "title": "Reduce Pages",
+                        "text": "The UCEA website will undergo a redesign to reduce the number of pages from 1000 to 60, focusing on eliminating outdated or redundant content. My role is to collaborate with the UCEA team to analyze, reorganize, and streamline the navigation for improved user experience. This approach will prioritize important content, making it more accessible and engaging for users.",
+                        "order": 0
+                    },
+                    {
+                        "id": 2,
+                        "title": "Construct IA",
+                        "text": "The UCEA website has a complex and outdated IA due to platform shifts over time. My role is to redesign the IA with a user-centered approach, aligning it with the organization\u2019s goals and optimizing for search engines. This will enhance navigation, improve user experience, and increase engagement through testing, feedback, and collaboration with the UCEA team.",
+                        "order": 1
+                    },
+                    {
+                        "id": 3,
+                        "title": "Prototype",
+                        "text": "MemberLeap (the network provider) only provides basic migration services, all interfaces need to be designed by the client. My task is to create high-end prototypes that meet UCEA users' needs, ensuring smooth development in the next stages and enhancing user satisfaction.",
+                        "order": 2
+                    },
+                    {
+                        "id": 4,
+                        "title": "Develop Website",
+                        "text": "Since MemberLeap only provides a grid and text editor-based design interface, UCEA HQ wants the website to have more interactive design elements. Additionally, considering future involvement of non-coders in website management, my responsibility is to embed web syntax (including HTML, CSS, and JavaScript) that is easy to manage, simple to understand, yet capable of supporting interactive design.",
+                        "order": 3
+                    }
+                ],
+                "image_layers": [],
+                "video_layers": []
+            },
+            {
+                "id": 3,
+                "title": "Gather Data",
+                "text_layers": [
+                    {
+                        "id": 7,
+                        "title": "Analyze Stakeholders",
+                        "text": "Stakeholder analysis and interviews were conducted with UCEA members and key staff. Key stakeholder groups were identified, each with distinct roles, interests, and website requirements. This analysis provided a comprehensive understanding of the relationships between various roles and the website.",
+                        "order": 0
+                    },
+                    {
+                        "id": 8,
+                        "title": "Website Audit",
+                        "text": "A comprehensive website audit, using Google Analytics to analyze traffic patterns on the UCEA website, revealed that UCEA members, the intended audience, were primarily relying on email for information rather than using the website. This insight underscores the need to improve website accessibility and usability to enhance member engagement and reduce the workload on headquarters staff.",
+                        "order": 1
+                    },
+                    {
+                        "id": 9,
+                        "title": "Conduct Focus Group",
+                        "text": "A focus group of five UCEA members identified key issues with the old website, including poor information architecture, untraceable actions, inaccessible information, and redundant content. These insights are crucial for guiding the redesign, improving user-friendliness, and encouraging more members to use the site for information and resources.",
+                        "order": 2
+                    }
+                ],
+                "image_layers": [
+                    {
+                        "id": 1,
+                        "title": null,
+                        "image": "/media/image_layers/343271281_531590912516678_91433456348223.webp",
+                        "alt_text": null,
+                        "text": null,
+                        "order": null,
+                        "links": []
+                    },
+                    {
+                        "id": 2,
+                        "title": null,
+                        "image": "/media/image_layers/download.webp",
+                        "alt_text": null,
+                        "text": null,
+                        "order": null,
+                        "links": []
+                    },
+                    {
+                        "id": 3,
+                        "title": null,
+                        "image": "/media/image_layers/FOCUS_PNG.webp",
+                        "alt_text": null,
+                        "text": null,
+                        "order": null,
+                        "links": []
+                    }
+                ],
+                "video_layers": []
+            },
+            {
+                "id": 4,
+                "title": "Construct IA",
+                "text_layers": [
+                    {
+                        "id": 13,
+                        "title": "Analyze Pages",
+                        "text": "Contextual design theory was applied to analyze the UCEA website's information architecture, creating tailored environments for different user groups. The proposed IA was visualized using Miro, a collaborative online platform, through user flow diagrams to better understand interactions and identify improvements. Miro's features facilitated effective communication with the project team and stakeholders. These user flow diagrams became crucial tools, guiding decisions to ensure the redesigned IA meets the diverse needs of UCEA website users.",
+                        "order": 0
+                    },
+                    {
+                        "id": 14,
+                        "title": "Construct New IA",
+                        "text": "A tree testing tool was integrated to support the creation of a new IA for the UCEA website, based on the user flow analysis results from Miro. By presenting users with a simplified tree diagram of the site structure, this approach helps structure the IA without visual design influences. It provides valuable insights into how effectively the IA facilitates content access during the development phase.",
+                        "order": 1
+                    }
+                ],
+                "image_layers": [
+                    {
+                        "id": 7,
+                        "title": null,
+                        "image": "/media/image_layers/UCEA_IA.png",
+                        "alt_text": null,
+                        "text": null,
+                        "order": null,
+                        "links": []
+                    },
+                    {
+                        "id": 8,
+                        "title": null,
+                        "image": "/media/image_layers/Hompage.png",
+                        "alt_text": null,
+                        "text": null,
+                        "order": null,
+                        "links": []
+                    }
+                ],
+                "video_layers": []
+            },
+            {
+                "id": 5,
+                "title": "Prototype",
+                "text_layers": [],
+                "image_layers": [
+                    {
+                        "id": 9,
+                        "title": "Lo-fi Prototype",
+                        "image": "/media/image_layers/344594120_1884924645226652_4798109927983732470_n_edited.webp",
+                        "alt_text": null,
+                        "text": "To collect early user feedback, a lo-fi cardboard prototype of the UCEA website was created, based on the IA. User testing provided valuable insights into structure, navigation flow, and content placement, guiding necessary improvements and adjustments.",
+                        "order": null,
+                        "links": []
+                    },
+                    {
+                        "id": 10,
+                        "title": "Hi-fi Prototype",
+                        "image": "/media/image_layers/test_PNG.webp",
+                        "alt_text": null,
+                        "text": "Once the basic layout was finalized, an HTML and CSS testing website was developed to collect feedback on the user experience from a broader audience. Following several iterations and tests to ensure the IA and website navigation were accessible, the foundational color scheme and layout were incorporated to support further development. \r\nThe follow link as an initial demo, with the remaining versions focused on localized testing.",
+                        "order": null,
+                        "links": [
+                            {
+                                "id": 7,
+                                "title": "Link",
+                                "url": "https://fuminhsiao.github.io/ucea-prototype/index.html",
+                                "description": null
+                            }
+                        ]
+                    }
+                ],
+                "video_layers": []
+            },
+            {
+                "id": 6,
+                "title": "Development",
+                "text_layers": [
+                    {
+                        "id": 17,
+                        "title": "Visual Design",
+                        "text": "In response to the client's requirements, various visual effects and layout options were iteratively developed to refine the design. CSS and JavaScript were integrated to implement micro animations, adding subtle yet impactful motion elements that enhance user interaction. Contents were carefully designed to create a more dynamic and engaging experience, making the interface feel lively without overwhelming the overall design.",
+                        "order": 0
+                    },
+                    {
+                        "id": 18,
+                        "title": "Dynamic Design",
+                        "text": "Despite the basic features provided by MemberLeap, efforts were made to maintain its backend while inserting custom code to enhance aesthetics and usability. Based on the established IA, carefully designed sub-sidebars were implemented. Additionally, a shared component library was created to ensure consistent updates across the design when changes are made, streamlining the development process and improving overall site cohesion.",
+                        "order": 1
+                    },
+                    {
+                        "id": 16,
+                        "title": "Revamp Content",
+                        "text": "The complex content was simplified and updated by developing detailed flowcharts that map out the information structure. Repetitive content was carefully reviewed and consolidated into unified sections, streamlining the layout and improving overall clarity and accessibility. This process ensured that all redundant elements were merged efficiently, enhancing the user experience and making the content easier to navigate.",
+                        "order": 2
+                    },
+                    {
+                        "id": 19,
+                        "title": "Future Implement",
+                        "text": "A small backend system is being developed for UCEA member institutions, featuring a frontend search function. Static member institution data from an Excel file is being converted into a Django database, with a CRUD interface designed for easy management of the data. This system ensures streamlined administration and improved accessibility for users searching for member institution information.",
+                        "order": 3
+                    }
+                ],
+                "image_layers": [
+                    {
+                        "id": 12,
+                        "title": "Example",
+                        "image": "/media/image_layers/Frame_4.png",
+                        "alt_text": null,
+                        "text": "The homepage was rendered to utilize the full width of the page, making the most of the web provider's built-in features to create a more dynamic, user-friendly design that enhances the overall user experience.",
+                        "order": 0,
+                        "links": [
+                            {
+                                "id": 4,
+                                "title": "Current Website",
+                                "url": "https://ucea.org/",
+                                "description": null
+                            },
+                            {
+                                "id": 5,
+                                "title": "Migrate from Memberleap",
+                                "url": "https://ucea.org/index_old.php",
+                                "description": null
+                            },
+                            {
+                                "id": 6,
+                                "title": "Previous Website",
+                                "url": "https://web.archive.org/web/20230927223950/http://www.ucea.org/",
+                                "description": null
+                            }
+                        ]
+                    },
+                    {
+                        "id": 11,
+                        "title": "Example",
+                        "image": "/media/image_layers/Frame_1_3.png",
+                        "alt_text": null,
+                        "text": "The shared sidebar was designed according to the IA, with the code placed on the landing page to ensure synchronization across all pages. Due to the lack of PHP modification permissions, JavaScript was utilized to implement the necessary functionality wherever possible.",
+                        "order": 1,
+                        "links": [
+                            {
+                                "id": 1,
+                                "title": "Current Website",
+                                "url": "https://ucea.org/gsc.php",
+                                "description": null
+                            },
+                            {
+                                "id": 2,
+                                "title": "Migrate from Memberleap",
+                                "url": "https://ucea.org/graduate_student_council.php",
+                                "description": null
+                            },
+                            {
+                                "id": 3,
+                                "title": "Previous Website",
+                                "url": "https://web.archive.org/web/20230927223950/http://www.ucea.org/grad-student-focus/graduate-student-council/",
+                                "description": null
+                            }
+                        ]
+                    },
+                    {
+                        "id": 13,
+                        "title": "Example",
+                        "image": "/media/image_layers/MacBook_Air_-_1_1.png",
+                        "alt_text": null,
+                        "text": "The complex UCEA application content was improved and transformed into easy-to-understand flowcharts using Figma, increasing the membership application rate.",
+                        "order": 2,
+                        "links": [
+                            {
+                                "id": 8,
+                                "title": "Current Website",
+                                "url": "https://www.ucea.org/apply_for_ucea_member.php",
+                                "description": null
+                            },
+                            {
+                                "id": 9,
+                                "title": "Previous Website",
+                                "url": "https://web.archive.org/web/20230906164903/http://www.ucea.org/2014/07/30/institutional-membership/",
+                                "description": null
+                            }
+                        ]
+                    },
+                    {
+                        "id": 14,
+                        "title": "Example",
+                        "image": "/media/image_layers/Frame_4_2.png",
+                        "alt_text": null,
+                        "text": "Under developing: Eliminate the inefficient management of member data using Excel by building a backend system with Django, creating a member institution database, and rendering it on the website with different content displayed based on user permissions.",
+                        "order": 3,
+                        "links": [
+                            {
+                                "id": 10,
+                                "title": "Current Status",
+                                "url": "https://www.ucea.org/member_directory.php",
+                                "description": null
+                            }
+                        ]
+                    }
+                ],
+                "video_layers": []
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "iCademify",
+        "description": "Enjoy your Academic Conference",
+        "showcases": [],
+        "tags": [
+            {
+                "id": 1,
+                "name": "# UX Research"
+            },
+            {
+                "id": 2,
+                "name": "# UX Design"
+            }
+        ],
+        "design_processes": [],
+        "pages": [
+            {
+                "id": 7,
+                "title": "123",
+                "text_layers": [
+                    {
+                        "id": 20,
+                        "title": "123",
+                        "text": "123",
+                        "order": 0
+                    }
+                ],
+                "image_layers": [],
+                "video_layers": []
+            }
+        ]
+    }
+]

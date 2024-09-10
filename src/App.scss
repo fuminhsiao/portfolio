@@ -1,0 +1,37 @@
+$primary-color: #acacac;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+
+
+@font-face {
+  font-family: 'La Belle Aurore';
+  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf') format('woff2');
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('./assets/fonts/CormorantGaramond-Regular.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('./assets/fonts/CormorantGaramond-SemiBoldItalic.ttf') format('woff2');
+}
+@font-face {
+  font-family: 'Philosopher';
+  src: url('./assets/fonts/Philosopher-Regular.ttf') format('woff2');
+}
+input,
+textarea {
+  font-family: 'Helvetica Neue', sans-serif;
+}
