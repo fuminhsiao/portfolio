@@ -1,0 +1,1269 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/portfolio/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Web site created using create-react-app">
+  <link rel="apple-touch-icon" href="/portfolio/logo192.png">
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="/portfolio/manifest.json">
+  <!--
+      Notice the use of /portfolio in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/portfolio/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Fumin Hsiao</title>
+  <script defer="" src="/portfolio/static/js/bundle.js"></script>
+  <style>
+    .logo-container {
+      width: 800px;
+      height: 800px;
+      position: relative;
+      z-index: -100;
+      text-align: center;
+      margin: auto;
+    }
+
+    .logo-container svg {
+      width: 800px;
+      height: auto;
+      bottom: 0;
+      opacity: 0.5;
+    }
+
+    .svg-container {
+      stroke: #7D94B5;
+      stroke-width: 10;
+      z-index: 5;
+    }
+
+    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL0xvZ29CYWNrZ3JvdW5kL2luZGV4LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxZQUFBO0VBQ0EsYUFBQTtFQUNBLGtCQUFBO0VBQ0EsYUFBQTtFQUNBLGtCQUFBO0VBQ0EsWUFBQTtBQUNKO0FBRUk7RUFDSSxZQUFBO0VBQ0EsWUFBQTtFQUNBLFNBQUE7RUFDQSxZQUFBO0FBQVI7O0FBUUE7RUFDSSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSxVQUFBO0FBTEoiLCJzb3VyY2VzQ29udGVudCI6WyIubG9nby1jb250YWluZXJ7XG4gICAgd2lkdGg6IDgwMHB4O1xuICAgIGhlaWdodDogODAwcHg7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIHotaW5kZXg6IC0xMDA7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIG1hcmdpbjogYXV0bztcblxuXG4gICAgc3ZnIHtcbiAgICAgICAgd2lkdGg6IDgwMHB4O1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICAgIGJvdHRvbTogMDtcbiAgICAgICAgb3BhY2l0eTogMC41O1xuICAgIH1cblxuICAgIFxuICAgIFxuXG59XG5cbi5zdmctY29udGFpbmVyIHtcbiAgICBzdHJva2U6ICM3RDk0QjU7XG4gICAgc3Ryb2tlLXdpZHRoOiAxMDtcbiAgICB6LWluZGV4OiA1O1xufVxuXG5cbiJdLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style>
+    /*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+    html.has-scroll-smooth {
+      overflow: hidden;
+    }
+
+    html.has-scroll-dragging {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    .has-scroll-smooth body {
+      overflow: hidden;
+    }
+
+    .has-scroll-smooth [data-scroll-container] {
+      min-height: 100vh;
+    }
+
+    [data-scroll-direction="horizontal"] [data-scroll-container] {
+      height: 100vh;
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    [data-scroll-direction="horizontal"] [data-scroll-section] {
+      display: inline-block;
+      vertical-align: top;
+      white-space: nowrap;
+      height: 100%;
+    }
+
+    .c-scrollbar {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 11px;
+      height: 100%;
+      transform-origin: center right;
+      transition: transform 0.3s, opacity 0.3s;
+      opacity: 0;
+    }
+
+    .c-scrollbar:hover {
+      transform: scaleX(1.45);
+    }
+
+    .c-scrollbar:hover,
+    .has-scroll-scrolling .c-scrollbar,
+    .has-scroll-dragging .c-scrollbar {
+      opacity: 1;
+    }
+
+    [data-scroll-direction="horizontal"] .c-scrollbar {
+      width: 100%;
+      height: 10px;
+      top: auto;
+      bottom: 0;
+      transform: scaleY(1);
+    }
+
+    [data-scroll-direction="horizontal"] .c-scrollbar:hover {
+      transform: scaleY(1.3);
+    }
+
+    .c-scrollbar_thumb {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: black;
+      opacity: 0.5;
+      width: 7px;
+      border-radius: 10px;
+      margin: 2px;
+      cursor: grab;
+    }
+
+    .has-scroll-dragging .c-scrollbar_thumb {
+      cursor: grabbing;
+    }
+
+    [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+      right: auto;
+      bottom: 0;
+    }
+
+    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9sb2NvbW90aXZlLXNjcm9sbC9kaXN0L2xvY29tb3RpdmUtc2Nyb2xsLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxpR0FBaUc7QUFDakc7RUFDRSxnQkFBZ0IsRUFBRTs7QUFFcEI7RUFDRSx5QkFBeUI7RUFDekIsc0JBQXNCO0VBRXRCLGlCQUFpQixFQUFFOztBQUVyQjtFQUNFLGdCQUFnQixFQUFFOztBQUVwQjtFQUNFLGlCQUFpQixFQUFFOztBQUVyQjtFQUNFLGFBQWE7RUFDYixxQkFBcUI7RUFDckIsbUJBQW1CLEVBQUU7O0FBRXZCO0VBQ0UscUJBQXFCO0VBQ3JCLG1CQUFtQjtFQUNuQixtQkFBbUI7RUFDbkIsWUFBWSxFQUFFOztBQUVoQjtFQUNFLGtCQUFrQjtFQUNsQixRQUFRO0VBQ1IsTUFBTTtFQUNOLFdBQVc7RUFDWCxZQUFZO0VBQ1osOEJBQThCO0VBQzlCLHdDQUF3QztFQUN4QyxVQUFVLEVBQUU7RUFDWjtJQUNFLHVCQUF1QixFQUFFO0VBQzNCO0lBQ0UsVUFBVSxFQUFFO0VBQ2Q7SUFDRSxXQUFXO0lBQ1gsWUFBWTtJQUNaLFNBQVM7SUFDVCxTQUFTO0lBQ1Qsb0JBQW9CLEVBQUU7SUFDdEI7TUFDRSxzQkFBc0IsRUFBRTs7QUFFOUI7RUFDRSxrQkFBa0I7RUFDbEIsTUFBTTtFQUNOLFFBQVE7RUFDUix1QkFBdUI7RUFDdkIsWUFBWTtFQUNaLFVBQVU7RUFDVixtQkFBbUI7RUFDbkIsV0FBVztFQUVYLFlBQVksRUFBRTtFQUNkO0lBRUUsZ0JBQWdCLEVBQUU7RUFDcEI7SUFDRSxXQUFXO0lBQ1gsU0FBUyxFQUFFIiwic291cmNlc0NvbnRlbnQiOlsiLyohIGxvY29tb3RpdmUtc2Nyb2xsIHY0LjEuMyB8IE1JVCBMaWNlbnNlIHwgaHR0cHM6Ly9naXRodWIuY29tL2xvY29tb3RpdmVtdGwvbG9jb21vdGl2ZS1zY3JvbGwgKi9cbmh0bWwuaGFzLXNjcm9sbC1zbW9vdGgge1xuICBvdmVyZmxvdzogaGlkZGVuOyB9XG5cbmh0bWwuaGFzLXNjcm9sbC1kcmFnZ2luZyB7XG4gIC13ZWJraXQtdXNlci1zZWxlY3Q6IG5vbmU7XG4gIC1tb3otdXNlci1zZWxlY3Q6IG5vbmU7XG4gIC1tcy11c2VyLXNlbGVjdDogbm9uZTtcbiAgdXNlci1zZWxlY3Q6IG5vbmU7IH1cblxuLmhhcy1zY3JvbGwtc21vb3RoIGJvZHkge1xuICBvdmVyZmxvdzogaGlkZGVuOyB9XG5cbi5oYXMtc2Nyb2xsLXNtb290aCBbZGF0YS1zY3JvbGwtY29udGFpbmVyXSB7XG4gIG1pbi1oZWlnaHQ6IDEwMHZoOyB9XG5cbltkYXRhLXNjcm9sbC1kaXJlY3Rpb249XCJob3Jpem9udGFsXCJdIFtkYXRhLXNjcm9sbC1jb250YWluZXJdIHtcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB3aGl0ZS1zcGFjZTogbm93cmFwOyB9XG5cbltkYXRhLXNjcm9sbC1kaXJlY3Rpb249XCJob3Jpem9udGFsXCJdIFtkYXRhLXNjcm9sbC1zZWN0aW9uXSB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgdmVydGljYWwtYWxpZ246IHRvcDtcbiAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgaGVpZ2h0OiAxMDAlOyB9XG5cbi5jLXNjcm9sbGJhciB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgcmlnaHQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDExcHg7XG4gIGhlaWdodDogMTAwJTtcbiAgdHJhbnNmb3JtLW9yaWdpbjogY2VudGVyIHJpZ2h0O1xuICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4zcywgb3BhY2l0eSAwLjNzO1xuICBvcGFjaXR5OiAwOyB9XG4gIC5jLXNjcm9sbGJhcjpob3ZlciB7XG4gICAgdHJhbnNmb3JtOiBzY2FsZVgoMS40NSk7IH1cbiAgLmMtc2Nyb2xsYmFyOmhvdmVyLCAuaGFzLXNjcm9sbC1zY3JvbGxpbmcgLmMtc2Nyb2xsYmFyLCAuaGFzLXNjcm9sbC1kcmFnZ2luZyAuYy1zY3JvbGxiYXIge1xuICAgIG9wYWNpdHk6IDE7IH1cbiAgW2RhdGEtc2Nyb2xsLWRpcmVjdGlvbj1cImhvcml6b250YWxcIl0gLmMtc2Nyb2xsYmFyIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDEwcHg7XG4gICAgdG9wOiBhdXRvO1xuICAgIGJvdHRvbTogMDtcbiAgICB0cmFuc2Zvcm06IHNjYWxlWSgxKTsgfVxuICAgIFtkYXRhLXNjcm9sbC1kaXJlY3Rpb249XCJob3Jpem9udGFsXCJdIC5jLXNjcm9sbGJhcjpob3ZlciB7XG4gICAgICB0cmFuc2Zvcm06IHNjYWxlWSgxLjMpOyB9XG5cbi5jLXNjcm9sbGJhcl90aHVtYiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICByaWdodDogMDtcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XG4gIG9wYWNpdHk6IDAuNTtcbiAgd2lkdGg6IDdweDtcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgbWFyZ2luOiAycHg7XG4gIGN1cnNvcjogLXdlYmtpdC1ncmFiO1xuICBjdXJzb3I6IGdyYWI7IH1cbiAgLmhhcy1zY3JvbGwtZHJhZ2dpbmcgLmMtc2Nyb2xsYmFyX3RodW1iIHtcbiAgICBjdXJzb3I6IC13ZWJraXQtZ3JhYmJpbmc7XG4gICAgY3Vyc29yOiBncmFiYmluZzsgfVxuICBbZGF0YS1zY3JvbGwtZGlyZWN0aW9uPVwiaG9yaXpvbnRhbFwiXSAuYy1zY3JvbGxiYXJfdGh1bWIge1xuICAgIHJpZ2h0OiBhdXRvO1xuICAgIGJvdHRvbTogMDsgfVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */
+  </style>
+  <style>
+    @import url(https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap);
+  </style>
+  <style>
+    @font-face {
+      font-family: "La Belle Aurore";
+      src: url(http://localhost:3000/portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2) format("woff2");
+    }
+
+    @font-face {
+      font-family: "Coolvetica";
+      src: url(http://localhost:3000/portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2) format("woff2");
+    }
+
+    @font-face {
+      font-family: "Montserrat";
+      src: url(http://localhost:3000/portfolio/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf) format("woff2");
+    }
+
+    @font-face {
+      font-family: "Raleway";
+      src: url(http://localhost:3000/portfolio/static/media/CormorantGaramond-Regular.4114a151797af532cace.ttf) format("woff2");
+    }
+
+    @font-face {
+      font-family: "CormorantGaramond";
+      src: url(http://localhost:3000/portfolio/static/media/CormorantGaramond-SemiBoldItalic.d9cb5d748f7c00c0689b.ttf) format("woff2");
+    }
+
+    @font-face {
+      font-family: "Philosopher";
+      src: url(http://localhost:3000/portfolio/static/media/Philosopher-Regular.93c7d8b5efe3f355f3ca.ttf) format("woff2");
+    }
+
+    input,
+    textarea {
+      font-family: "Helvetica Neue", sans-serif;
+    }
+
+    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFNQTtFQUNFLDhCQUFBO0VBQ0EsNERBQUE7QUFKRjtBQU9BO0VBQ0UseUJBQUE7RUFDQSw0REFBQTtBQUxGO0FBUUE7RUFDRSx5QkFBQTtFQUNBLDREQUFBO0FBTkY7QUFRQTtFQUNFLHNCQUFBO0VBQ0EsNERBQUE7QUFORjtBQVNBO0VBQ0UsZ0NBQUE7RUFDQSw0REFBQTtBQVBGO0FBU0E7RUFDRSwwQkFBQTtFQUNBLDREQUFBO0FBUEY7QUFTQTs7RUFFRSx5Q0FBQTtBQVBGIiwic291cmNlc0NvbnRlbnQiOlsiJHByaW1hcnktY29sb3I6ICNhY2FjYWM7XG5cblxuQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9TXVsaTp3Z2h0QDQwMDs3MDAmZGlzcGxheT1zd2FwJyk7XG5cblxuQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiAnTGEgQmVsbGUgQXVyb3JlJztcbiAgc3JjOiB1cmwoJy4vYXNzZXRzL2ZvbnRzL0xhQmVsbGVBdXJvcmUud29mZjInKSBmb3JtYXQoJ3dvZmYyJyk7XG59XG5cbkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogJ0Nvb2x2ZXRpY2EnO1xuICBzcmM6IHVybCgnLi9hc3NldHMvZm9udHMvQ29vbHZldGljYVJnLVJlZ3VsYXIud29mZjInKSBmb3JtYXQoJ3dvZmYyJyk7XG59XG5cbkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogJ01vbnRzZXJyYXQnO1xuICBzcmM6IHVybCgnLi9hc3NldHMvZm9udHMvTW9udHNlcnJhdC1WYXJpYWJsZUZvbnRfd2dodC50dGYnKSBmb3JtYXQoJ3dvZmYyJyk7XG59XG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6ICdSYWxld2F5JztcbiAgc3JjOiB1cmwoJy4vYXNzZXRzL2ZvbnRzL0Nvcm1vcmFudEdhcmFtb25kLVJlZ3VsYXIudHRmJykgZm9ybWF0KCd3b2ZmMicpO1xufVxuXG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6ICdDb3Jtb3JhbnRHYXJhbW9uZCc7XG4gIHNyYzogdXJsKCcuL2Fzc2V0cy9mb250cy9Db3Jtb3JhbnRHYXJhbW9uZC1TZW1pQm9sZEl0YWxpYy50dGYnKSBmb3JtYXQoJ3dvZmYyJyk7XG59XG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6ICdQaGlsb3NvcGhlcic7XG4gIHNyYzogdXJsKCcuL2Fzc2V0cy9mb250cy9QaGlsb3NvcGhlci1SZWd1bGFyLnR0ZicpIGZvcm1hdCgnd29mZjInKTtcbn1cbmlucHV0LFxudGV4dGFyZWEge1xuICBmb250LWZhbWlseTogJ0hlbHZldGljYSBOZXVlJywgc2Fucy1zZXJpZjtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style data-styled="active" data-styled-version="6.1.13">
+    .cUrfAQ {
+      font-family: "Muli", sans-serif;
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: #000;
+      line-height: normal;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dPOqbT {
+      font-family: "Muli", sans-serif;
+      font-size: 2rem;
+      font-weight: 900;
+      color: #000;
+      line-height: normal;
+      margin-bottom: 0px;
+    }
+
+    .cwhRPJ {
+      position: absolute;
+      justify-content: start;
+      top: 100px;
+      transform: translateY(-30%);
+      z-index: -1;
+      width: 100%;
+    }
+
+    .bCXmhJ {
+      font-family: "Muli", sans-serif;
+      font-size: 10rem;
+      font-weight: 600;
+      color: rgba(150, 150, 150, 0.15);
+      margin-left: 20px;
+      padding-top: 100px;
+    }
+
+    .ehrVRb {
+      margin: auto;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      color: #000;
+      height: 100vh;
+      padding: 0;
+    }
+
+    .cSNdqs {
+      margin: auto;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100vw;
+      color: #000;
+      height: 100vh;
+      padding: 0;
+    }
+
+    .jjHGiJ {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      color: #000;
+      z-index: 20;
+    }
+
+    .jjHGiJ a {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      color: #000;
+    }
+
+    .jjHGiJ svg {
+      width: 4rem;
+      height: auto;
+      overflow: visible;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
+
+    .jjHGiJ svg g path {
+      stroke: #000;
+    }
+
+    .ejZRsk {
+      z-index: 6;
+      display: flex;
+      transition: all 0.3s ease;
+    }
+
+    .bxrPeH {
+      font-size: 1.1rem;
+      position: relative;
+      list-style: none;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      gap: 20px;
+      margin-right: 10px;
+    }
+
+    .dHlWYv {
+      text-transform: uppercase;
+      color: #000;
+      cursor: pointer;
+    }
+
+    .irLwza {
+      color: #000;
+      font-family: "Muli";
+      font-weight: 100;
+      padding-left: 16px;
+      padding-top: 3px;
+    }
+
+    .keFYQM {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      max-width: 1200px;
+      margin: 0 auto;
+      color: #000;
+    }
+
+    .kLFGGT {
+      font-size: 5em;
+      font-weight: 500;
+      color: #000;
+      padding: 0;
+      max-width: 768px;
+      margin-bottom: 20px;
+    }
+
+    .JNlIP {
+      font-weight: 300;
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #000;
+      text-decoration: underline;
+    }
+
+    .cEGqZU {
+      font-weight: 300;
+      font-size: 1.25rem;
+      margin-top: 2rem;
+      color: #000;
+    }
+
+    .fYTzXs {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .TUbLe {
+      position: relative;
+      width: 1200px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .TUbLe:hover .showcase-image {
+      transform: scale(1.1);
+    }
+
+    .TUbLe:hover .overlay {
+      opacity: 1;
+    }
+
+    .bcQLwD {
+      width: 1200px;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .eTPuda {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .fMbksU {
+      color: #fff;
+      font-family: "Muli", sans-serif;
+      font-size: 2rem;
+      text-decoration: none;
+      padding: 2rem;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      font-weight: 900;
+    }
+
+    .knsdGq {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .oNfGB {
+      position: relative;
+      width: 100%;
+    }
+
+    .bsgRxN {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+    }
+
+    .jAHsZO {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      border: 3px solid #000;
+      margin: 30px;
+    }
+
+    .jAHsZO:nth-child(odd) {
+      align-self: flex-start;
+      margin-bottom: 350px;
+    }
+
+    .jAHsZO:nth-child(even) {
+      align-self: flex-end;
+      margin-top: 350px;
+    }
+
+    .ieEQlK {
+      margin: 0;
+      font-size: 2.2rem;
+      color: #000;
+      text-align: center;
+      font-weight: 500;
+      line-height: 1.2;
+      word-break: break-word;
+      word-wrap: break-word;
+      white-space: normal;
+      max-width: 80%;
+    }
+
+    .kcwzWu {
+      position: absolute;
+      left: 50%;
+      width: 3px;
+      height: 40px;
+      background-color: #000;
+      transform: translateX(-50%);
+      border-radius: 2px;
+      bottom: -50px;
+    }
+
+    .ixBcqG {
+      position: absolute;
+      left: 50%;
+      width: 3px;
+      height: 40px;
+      background-color: #000;
+      transform: translateX(-50%);
+      border-radius: 2px;
+      top: -50px;
+    }
+
+    .krLSFc {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      right: 10%;
+      height: 3px;
+      background-color: #000;
+      border-radius: 2px;
+    }
+
+    .eHPVav {
+      width: 100%;
+    }
+
+    .iqjaPx {
+      width: 1024px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .eHjcGv {
+      position: relative;
+      width: 100%;
+    }
+
+    .lhGtVz {
+      display: flex;
+      flex-direction: row;
+      border-radius: 10px;
+      width: 1024px;
+    }
+
+    .cHHCDb {
+      width: 50%;
+      font-family: "Muli", sans-serif;
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: #000;
+      line-height: normal;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px;
+    }
+
+    .kWOOZh {
+      width: 100%;
+      object-fit: contain;
+      border-radius: 10px;
+      opacity: 0.5;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .lfJkxR {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      transition: opacity 0.3s ease;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .lcggGz {
+      position: relative;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lcggGz:hover .sc-FFETS {
+      opacity: 1;
+    }
+
+    .lcggGz:hover .sc-hsfCcR {
+      opacity: 0;
+    }
+
+    .iavTKI {
+      position: relative;
+      width: 100%;
+    }
+
+    .caHCfN {
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      width: 1024px;
+    }
+
+    .heWfpt {
+      width: 100%;
+      position: relative;
+      padding-bottom: 56.25%;
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .heWfpt img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.5;
+      transition: opacity 0.3s ease;
+      z-index: 0;
+    }
+
+    .zOmRz {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      transition: opacity 0.3s ease;
+      z-index: 1;
+      pointer-events: none;
+      opacity: 1;
+    }
+
+    .frawIY {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .frawIY:hover .sc-gcfzXs img {
+      opacity: 1;
+    }
+
+    .frawIY:hover .sc-hGZxvd {
+      opacity: 0;
+    }
+
+    .dovNbI {
+      position: relative;
+      width: 100%;
+    }
+
+    .lbWNEc {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1024px;
+      gap: 20px;
+    }
+
+    .jvoQul {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1024px;
+      gap: 20px;
+    }
+
+    .kMVgUp {
+      display: flex;
+      flex-direction: column;
+      font-family: "Muli", sans-serif;
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: #000;
+      flex: 1;
+      text-align: left;
+    }
+
+    .dMILpX {
+      width: 100%;
+      max-width: 500px;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      opacity: 0.5;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+    }
+
+    .fJAScu {
+      width: 100%;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      opacity: 0.5;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+    }
+
+    .daFuzb {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      transition: opacity 0.3s ease;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .cSnCxp {
+      position: relative;
+      width: 40%;
+      max-width: 500px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .cSnCxp:hover .sc-edmcci,
+    .cSnCxp:hover .sc-fIfZzT {
+      opacity: 1;
+    }
+
+    .cSnCxp:hover .sc-hylbpc {
+      opacity: 0;
+    }
+
+    .sNzBn {
+      position: relative;
+      width: 100%;
+      max-width: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    .sNzBn:hover .sc-edmcci,
+    .sNzBn:hover .sc-fIfZzT {
+      opacity: 1;
+    }
+
+    .sNzBn:hover .sc-hylbpc {
+      opacity: 0;
+    }
+
+    .gbsLuU {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin-top: 10px;
+    }
+
+    .llKtTR {
+      font-size: 1.3rem;
+      color: #0066cc;
+      margin-right: 15px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .llKtTR:hover {
+      text-decoration: underline;
+    }
+
+    .izESrA {
+      position: relative;
+      width: 100%;
+    }
+
+    .dtnORq {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      max-width: 1024px;
+      height: 100vh;
+    }
+
+    .cKqiLx {
+      width: 100%;
+      position: relative;
+      padding-bottom: 56.25%;
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .cKqiLx img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.5;
+      transition: opacity 0.3s ease;
+      z-index: 0;
+    }
+
+    .gFSjcr {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      transition: opacity 0.3s ease;
+      z-index: 1;
+      pointer-events: none;
+      opacity: 1;
+    }
+
+    .ktLLwI {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .ktLLwI:hover .sc-kpAHqd img {
+      opacity: 1;
+    }
+
+    .ktLLwI:hover .sc-gvlNCs {
+      opacity: 0;
+    }
+
+    .bwpPZU {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: 10px;
+    }
+
+    .eBeuOj {
+      font-size: 1.5rem;
+      color: #0066cc;
+      margin-right: 15px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .eBeuOj:hover {
+      text-decoration: underline;
+    }
+
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Muli', sans-serif;
+      overflow-x: hidden;
+      background-color: #FAFAFA;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <div class="sc-dstKZu jjHGiJ">
+      <div><a href="/portfolio"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="64.000000pt"
+            height="64.000000pt" viewBox="0 0 64.000000 64.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+              <path variants="[object Object]" initial="hidden" animate="visible"
+                d="M254 470 c-32 -13 -54 -50 -54 -90 0 -41 14 -60 47 -60 21 0 22 -4 25 -82 l3 -83 40 0 40 0 3 78 3 77 30 0 c26 0 30 3 27 23 -2 16 -11 23 -30 25 -24 3 -28 8 -28 33 0 26 3 29 20 24 29 -9 60 12 60 40 0 25 -1 25 -82 24 -46 0 -93 -4 -104 -9z m176 -14 c0 -23 -25 -36 -59 -30 -31 6 -31 6 -31 -34 0 -38 2 -41 32 -44 42 -4 50 -28 9 -28 l-30 0 -3 -77 c-3 -77 -3 -78 -30 -81 l-28 -3 0 134 c0 73 -3 137 -7 140 -15 15 -33 -18 -31 -57 l1 -41 7 45 7 45 1 -43 c2 -30 -3 -44 -13 -48 -23 -9 -45 15 -45 50 0 63 37 85 143 86 59 0 77 -3 77 -14z">
+              </path>
+            </g>
+          </svg><span class="sc-cHqXqK irLwza"
+            style="opacity: 1; will-change: auto; transform: translateX(-5px);">Designs of Fumin Hsiao</span></a></div>
+      <div class="sc-keTIit ejZRsk">
+        <ul class="sc-dpBQxM bxrPeH">
+          <li class="sc-jwIPbr dHlWYv" tabindex="0">Project</li>
+          <li class="sc-jwIPbr dHlWYv" tabindex="0">Resume</li>
+        </ul>
+      </div>
+    </div>
+    <nav
+      style="position: fixed; top: 50%; right: 30px; z-index: 1000; display: flex; flex-direction: column; gap: 10px; background: rgb(51, 51, 51); padding: 10px; border-radius: 8px; transform: translateY(-50%);">
+      <a href="#brief"
+        style="color: rgb(255, 255, 255); text-decoration: none; font-size: 14px; padding: 5px; transition: background 0.3s; border-radius: 5px; background: rgb(85, 85, 85);">Project
+        Brief</a><a href="#showcase"
+        style="color: rgb(255, 255, 255); text-decoration: none; font-size: 14px; padding: 5px; transition: background 0.3s; border-radius: 5px; background: transparent;">Showcase</a><a
+        href="#design"
+        style="color: rgb(255, 255, 255); text-decoration: none; font-size: 14px; padding: 5px; transition: background 0.3s; border-radius: 5px; background: transparent;">Design
+        Process</a><a href="#defineproblem"
+        style="color: rgb(255, 255, 255); text-decoration: none; font-size: 14px; padding: 5px; transition: background 0.3s; border-radius: 5px; background: transparent;">Define
+        Problem</a><a href="#gatherdata"
+        style="color: rgb(255, 255, 255); text-decoration: none; font-size: 14px; padding: 5px; transition: background 0.3s; border-radius: 5px; background: transparent;">Gather
+        Data</a><a href="#constructia"
+        style="color: rgb(255, 255, 255); text-decoration: none; font-size: 14px; padding: 5px; transition: background 0.3s; border-radius: 5px; background: transparent;">Construct
+        IA</a><a href="#prototype"
+        style="color: rgb(255, 255, 255); text-decoration: none; font-size: 14px; padding: 5px; transition: background 0.3s; border-radius: 5px; background: transparent;">Prototype</a><a
+        href="#development"
+        style="color: rgb(255, 255, 255); text-decoration: none; font-size: 14px; padding: 5px; transition: background 0.3s; border-radius: 5px; background: transparent;">Development</a>
+    </nav>
+    <div style="width: 100%; will-change: auto; transform: none;">
+      <section id="brief" style="position: relative; width: 100%; display: flex; height: 100vh;">
+        <div class="sc-bbQqnZ keFYQM">
+          <h1 class="sc-iwXfZk kLFGGT" style="opacity: 1; will-change: auto; transform: none;">UCEA Website Redesign
+          </h1>
+          <div>
+            <h4 class="sc-dEkLRj JNlIP" style="opacity: 1; will-change: auto; transform: none;"># UX Research</h4>
+            <h4 class="sc-dEkLRj JNlIP" style="opacity: 1; will-change: auto; transform: none;"># UX Design</h4>
+            <h4 class="sc-dEkLRj JNlIP" style="opacity: 1; will-change: auto; transform: none;"># Website Development
+            </h4>
+          </div>
+          <p class="sc-kZrBCu cEGqZU" style="opacity: 1; will-change: auto; transform: none;">As a UX designer, I
+            collaborated with the University Council for Educational Administration (UCEA) to redesign their website.
+            Previously, UCEA engaged MemberLeap to revamp the site, but significant issues with the website's
+            infrastructure and content organization persisted. The project involved rebuilding the information
+            architecture and designing an improved user experience, including layout and navigation, to create a more
+            intuitive and user-friendly website. This initiative required leveraging UX design expertise to address
+            complex challenges and deliver a solution that met the client's needs. This project stands as a testament to
+            delivering impactful UX design solutions.</p>
+        </div>
+      </section>
+      <section id="showcase" style="position: relative; width: 100%; display: flex; height: 100vh;">
+        <div class="sc-diYFot fYTzXs">
+          <div class="sc-kEfuZE TUbLe"><img src="http://localhost:8000/media/showcase_images/Frame_11_2_tzsiQJ9.png"
+              alt="Showcase 1" class="sc-dhCplO bcQLwD showcase-image" style="opacity: 1; will-change: auto;">
+            <div class="sc-eMwmJz eTPuda overlay"><a href="https://www.ucea.org/" target="_blank"
+                rel="noopener noreferrer" class="sc-drVZOg fMbksU overlay-text">SHOWCASE</a></div>
+          </div>
+        </div>
+      </section>
+      <section id="design" style="position: relative; width: 100%; display: flex; height: 100vh;">
+        <div class="sc-jIyAiq oNfGB">
+          <div class="sc-egkSDF cwhRPJ">
+            <h1 class="sc-fAUdSK bCXmhJ">Design Process</h1>
+          </div>
+          <div class="sc-eWPXlR knsdGq">
+            <div class="sc-giBObj krLSFc"></div>
+            <div class="sc-lnsxGb bsgRxN">
+              <div class="sc-jSSkKI jAHsZO" style="opacity: 1; transform: none; will-change: auto;">
+                <h2 class="sc-iqyJx ieEQlK">Define Problem</h2>
+                <div position="even" class="sc-eDHQDy kcwzWu"></div>
+              </div>
+              <div class="sc-jSSkKI jAHsZO" style="opacity: 1; transform: none; will-change: auto;">
+                <h2 class="sc-iqyJx ieEQlK">Gather Data</h2>
+                <div position="odd" class="sc-eDHQDy ixBcqG"></div>
+              </div>
+              <div class="sc-jSSkKI jAHsZO" style="opacity: 1; transform: none; will-change: auto;">
+                <h2 class="sc-iqyJx ieEQlK">Construct IA</h2>
+                <div position="even" class="sc-eDHQDy kcwzWu"></div>
+              </div>
+              <div class="sc-jSSkKI jAHsZO" style="opacity: 1; transform: none; will-change: auto;">
+                <h2 class="sc-iqyJx ieEQlK">Prototype</h2>
+                <div position="odd" class="sc-eDHQDy ixBcqG"></div>
+              </div>
+              <div class="sc-jSSkKI jAHsZO" style="opacity: 1; transform: none; will-change: auto;">
+                <h2 class="sc-iqyJx ieEQlK">Develop</h2>
+                <div position="even" class="sc-eDHQDy kcwzWu"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="defineproblem" style="position: relative; width: 100%; display: flex; height: 100vh;">
+        <div class="sc-UblHX eHPVav" style="opacity: 1; will-change: auto;">
+          <div class="sc-egkSDF cwhRPJ">
+            <h1 variants="[object Object]" class="sc-fAUdSK bCXmhJ">Define Problems</h1>
+          </div>
+          <div justifycontent="center" class="sc-dntaoT ehrVRb">
+            <div class="sc-fufdwm iqjaPx">
+              <div style="opacity: 1; transform: none; will-change: auto;">
+                <h2 variants="[object Object]" class="sc-gtLWhw dPOqbT">Reduce Pages</h2>
+                <div variants="[object Object]" class="sc-blHHSb cUrfAQ">The UCEA website will undergo a redesign to
+                  reduce the number of pages from 1000 to 60, focusing on eliminating outdated or redundant content. My
+                  role is to collaborate with the UCEA team to analyze, reorganize, and streamline the navigation for
+                  improved user experience. This approach will prioritize important content, making it more accessible
+                  and engaging for users.</div>
+              </div>
+              <div style="opacity: 1; transform: none; will-change: auto;">
+                <h2 variants="[object Object]" class="sc-gtLWhw dPOqbT">Construct IA</h2>
+                <div variants="[object Object]" class="sc-blHHSb cUrfAQ">The UCEA website has a complex and outdated IA
+                  due to platform shifts over time. My role is to redesign the IA with a user-centered approach,
+                  aligning it with the organization’s goals and optimizing for search engines. This will enhance
+                  navigation, improve user experience, and increase engagement through testing, feedback, and
+                  collaboration with the UCEA team.</div>
+              </div>
+              <div style="opacity: 1; transform: none; will-change: auto;">
+                <h2 variants="[object Object]" class="sc-gtLWhw dPOqbT">Prototype</h2>
+                <div variants="[object Object]" class="sc-blHHSb cUrfAQ">MemberLeap (the network provider) only provides
+                  basic migration services, all interfaces need to be designed by the client. My task is to create
+                  high-end prototypes that meet UCEA users' needs, ensuring smooth development in the next stages and
+                  enhancing user satisfaction.</div>
+              </div>
+              <div style="opacity: 1; transform: none; will-change: auto;">
+                <h2 variants="[object Object]" class="sc-gtLWhw dPOqbT">Develop Website</h2>
+                <div variants="[object Object]" class="sc-blHHSb cUrfAQ">Since MemberLeap only provides a grid and text
+                  editor-based design interface, UCEA HQ wants the website to have more interactive design elements.
+                  Additionally, considering future involvement of non-coders in website management, my responsibility is
+                  to embed web syntax (including HTML, CSS, and JavaScript) that is easy to manage, simple to
+                  understand, yet capable of supporting interactive design.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gatherdata" style="position: relative; width: 100%; display: flex; height: 300vh;">
+        <div class="sc-Rjrgp eHjcGv" style="opacity: 1; will-change: auto;">
+          <div class="sc-egkSDF cwhRPJ">
+            <h1 variants="[object Object]" class="sc-fAUdSK bCXmhJ">Gather Data</h1>
+          </div>
+          <div class="sc-dntaoT cSNdqs">
+            <div class="sc-frniUE lhGtVz">
+              <div class="sc-huXwEz cHHCDb" style="opacity: 1; transform: none; will-change: auto;">
+                <h2 variants="[object Object]" class="sc-gtLWhw dPOqbT">Analyze Stakeholders</h2>Stakeholder analysis
+                and interviews were conducted with UCEA members and key staff. Key stakeholder groups were identified,
+                each with distinct roles, interests, and website requirements. This analysis provided a comprehensive
+                understanding of the relationships between various roles and the website.
+              </div>
+              <div class="sc-CNKsk lcggGz"><img
+                  src="http://localhost:8000/media/image_layers/343271281_531590912516678_91433456348223.webp"
+                  class="sc-FFETS kWOOZh" style="opacity: 1; transform: none; will-change: auto;">
+                <div class="sc-hsfCcR lfJkxR"></div>
+              </div>
+            </div>
+          </div>
+          <div class="sc-dntaoT cSNdqs">
+            <div class="sc-frniUE lhGtVz">
+              <div class="sc-huXwEz cHHCDb" style="opacity: 1; transform: none; will-change: auto;">
+                <h2 variants="[object Object]" class="sc-gtLWhw dPOqbT">Website Audit</h2>A comprehensive website audit,
+                using Google Analytics to analyze traffic patterns on the UCEA website, revealed that UCEA members, the
+                intended audience, were primarily relying on email for information rather than using the website. This
+                insight underscores the need to improve website accessibility and usability to enhance member engagement
+                and reduce the workload on headquarters staff.
+              </div>
+              <div class="sc-CNKsk lcggGz"><img src="http://localhost:8000/media/image_layers/download.webp"
+                  class="sc-FFETS kWOOZh" style="opacity: 1; transform: none; will-change: auto;">
+                <div class="sc-hsfCcR lfJkxR"></div>
+              </div>
+            </div>
+          </div>
+          <div class="sc-dntaoT cSNdqs">
+            <div class="sc-frniUE lhGtVz">
+              <div class="sc-huXwEz cHHCDb" style="opacity: 1; transform: none; will-change: auto;">
+                <h2 variants="[object Object]" class="sc-gtLWhw dPOqbT">Conduct Focus Group</h2>A focus group of five
+                UCEA members identified key issues with the old website, including poor information architecture,
+                untraceable actions, inaccessible information, and redundant content. These insights are crucial for
+                guiding the redesign, improving user-friendliness, and encouraging more members to use the site for
+                information and resources.
+              </div>
+              <div class="sc-CNKsk lcggGz"><img src="http://localhost:8000/media/image_layers/FOCUS_PNG.webp"
+                  class="sc-FFETS kWOOZh" style="opacity: 1; transform: none; will-change: auto;">
+                <div class="sc-hsfCcR lfJkxR"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="constructia" style="position: relative; width: 100%; display: flex; height: 200vh;">
+        <div class="sc-cqgMZH iavTKI" style="opacity: 1; will-change: auto;">
+          <div class="sc-egkSDF cwhRPJ">
+            <h1 class="sc-fAUdSK bCXmhJ">Construct IA</h1>
+          </div>
+          <div class="sc-dntaoT cSNdqs">
+            <div class="sc-gQkENW caHCfN" style="opacity: 1; will-change: auto; transform: none;">
+              <div variants="[object Object]" class="sc-blHHSb cUrfAQ">
+                <h2 class="sc-gtLWhw dPOqbT">Analyze Pages</h2>Contextual design theory was applied to analyze the UCEA
+                website's information architecture, creating tailored environments for different user groups. The
+                proposed IA was visualized using Miro, a collaborative online platform, through user flow diagrams to
+                better understand interactions and identify improvements. Miro's features facilitated effective
+                communication with the project team and stakeholders. These user flow diagrams became crucial tools,
+                guiding decisions to ensure the redesigned IA meets the diverse needs of UCEA website users.
+              </div>
+              <div class="sc-iRLAEC frawIY">
+                <div class="sc-gcfzXs heWfpt"><img src="http://localhost:8000/media/image_layers/UCEA_IA.png"></div>
+                <div class="sc-hGZxvd zOmRz"></div>
+              </div>
+            </div>
+          </div>
+          <div class="sc-dntaoT cSNdqs">
+            <div class="sc-gQkENW caHCfN" style="opacity: 1; will-change: auto; transform: none;">
+              <div variants="[object Object]" class="sc-blHHSb cUrfAQ">
+                <h2 class="sc-gtLWhw dPOqbT">Construct New IA</h2>A tree testing tool was integrated to support the
+                creation of a new IA for the UCEA website, based on the user flow analysis results from Miro. By
+                presenting users with a simplified tree diagram of the site structure, this approach helps structure the
+                IA without visual design influences. It provides valuable insights into how effectively the IA
+                facilitates content access during the development phase.
+              </div>
+              <div class="sc-iRLAEC frawIY">
+                <div class="sc-gcfzXs heWfpt"><img src="http://localhost:8000/media/image_layers/Hompage.png"></div>
+                <div class="sc-hGZxvd zOmRz"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="prototype" style="position: relative; width: 100%; display: flex; height: 200vh;">
+        <div class="sc-kwFycn dovNbI" style="opacity: 0; transform: none;">
+          <div class="sc-egkSDF cwhRPJ">
+            <h1 class="sc-fAUdSK bCXmhJ">Prototype</h1>
+          </div>
+          <div class="sc-dntaoT cSNdqs">
+            <div class="sc-bnGbuY lbWNEc">
+              <div class="sc-cSzYSJ kMVgUp">
+                <h2 class="sc-gtLWhw dPOqbT">Lo-fi Prototype</h2>To collect early user feedback, a lo-fi cardboard
+                prototype of the UCEA website was created, based on the IA. User testing provided valuable insights into
+                structure, navigation flow, and content placement, guiding necessary improvements and adjustments.
+              </div>
+              <div class="sc-jdeYMN cSnCxp"><img
+                  src="http://localhost:8000/media/image_layers/344594120_1884924645226652_4798109927983732470_n_edited.webp"
+                  class="sc-edmcci dMILpX">
+                <div class="sc-hylbpc daFuzb"></div>
+              </div>
+            </div>
+          </div>
+          <div class="sc-dntaoT cSNdqs">
+            <div class="sc-bnGbuY jvoQul">
+              <div class="sc-jdeYMN sNzBn"><img src="http://localhost:8000/media/image_layers/test_PNG.webp"
+                  class="sc-fIfZzT fJAScu">
+                <div class="sc-hylbpc daFuzb"></div>
+              </div>
+              <div class="sc-cSzYSJ kMVgUp">
+                <h2 class="sc-gtLWhw dPOqbT">Hi-fi Prototype</h2>Once the basic layout was finalized, an HTML and CSS
+                testing website was developed to collect feedback on the user experience from a broader audience.
+                Following several iterations and tests to ensure the IA and website navigation were accessible, the
+                foundational color scheme and layout were incorporated to support further development.
+                The follow link as an initial demo, with the remaining versions focused on localized testing.<div
+                  class="sc-dOEwtB gbsLuU"><a href="https://fuminhsiao.github.io/ucea-prototype/index.html"
+                    target="_blank" class="sc-ljLmeM llKtTR">Link</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="development" style="position: relative; width: 100%; display: flex; height: 500vh;">
+        <div class="sc-gqYRWL izESrA">
+          <div class="sc-egkSDF cwhRPJ">
+            <h1 class="sc-fAUdSK bCXmhJ">Development</h1>
+          </div>
+          <div class="sc-dntaoT cSNdqs">
+            <div class="sc-cwJYja dtnORq">
+              <div class="sc-blHHSb cUrfAQ">
+                <h2 class="sc-gtLWhw dPOqbT">Visual Design</h2>In response to the client's requirements, various visual
+                effects and layout options were iteratively developed to refine the design. CSS and JavaScript were
+                integrated to implement micro animations, adding subtle yet impactful motion elements that enhance user
+                interaction. Contents were carefully designed to create a more dynamic and engaging experience, making
+                the interface feel lively without overwhelming the overall design.
+              </div>
+              <div class="sc-blHHSb cUrfAQ">
+                <h2 class="sc-gtLWhw dPOqbT">Dynamic Design</h2>Despite the basic features provided by MemberLeap,
+                efforts were made to maintain its backend while inserting custom code to enhance aesthetics and
+                usability. Based on the established IA, carefully designed sub-sidebars were implemented. Additionally,
+                a shared component library was created to ensure consistent updates across the design when changes are
+                made, streamlining the development process and improving overall site cohesion.
+              </div>
+              <div class="sc-blHHSb cUrfAQ">
+                <h2 class="sc-gtLWhw dPOqbT">Revamp Content</h2>The complex content was simplified and updated by
+                developing detailed flowcharts that map out the information structure. Repetitive content was carefully
+                reviewed and consolidated into unified sections, streamlining the layout and improving overall clarity
+                and accessibility. This process ensured that all redundant elements were merged efficiently, enhancing
+                the user experience and making the content easier to navigate.
+              </div>
+              <div class="sc-blHHSb cUrfAQ">
+                <h2 class="sc-gtLWhw dPOqbT">Future Implement</h2>A small backend system is being developed for UCEA
+                member institutions, featuring a frontend search function. Static member institution data from an Excel
+                file is being converted into a Django database, with a CRUD interface designed for easy management of
+                the data. This system ensures streamlined administration and improved accessibility for users searching
+                for member institution information.
+              </div>
+            </div>
+          </div>
+          <div class="sc-dntaoT cSNdqs">
+            <div class="sc-cwJYja dtnORq">
+              <div class="sc-blHHSb cUrfAQ">
+                <h2 class="sc-gtLWhw dPOqbT">Example</h2>The homepage was rendered to utilize the full width of the
+                page, making the most of the web provider's built-in features to create a more dynamic, user-friendly
+                design that enhances the overall user experience.
+              </div>
+              <div class="sc-bCztur ktLLwI">
+                <div class="sc-kpAHqd cKqiLx"><img src="http://localhost:8000/media/image_layers/Frame_4.png"></div>
+                <div class="sc-gvlNCs gFSjcr"></div>
+              </div>
+              <div class="sc-iXGjfC bwpPZU"><a href="https://ucea.org/" target="_blank" class="sc-fkJXLl eBeuOj">Current
+                  Website</a><a href="https://ucea.org/index_old.php" target="_blank" class="sc-fkJXLl eBeuOj">Migrate
+                  from Memberleap</a><a href="https://web.archive.org/web/20230927223950/http://www.ucea.org/"
+                  target="_blank" class="sc-fkJXLl eBeuOj">Previous Website</a></div>
+            </div>
+          </div>
+          <div class="sc-dntaoT cSNdqs">
+            <div class="sc-cwJYja dtnORq">
+              <div class="sc-blHHSb cUrfAQ">
+                <h2 class="sc-gtLWhw dPOqbT">Example</h2>The shared sidebar was designed according to the IA, with the
+                code placed on the landing page to ensure synchronization across all pages. Due to the lack of PHP
+                modification permissions, JavaScript was utilized to implement the necessary functionality wherever
+                possible.
+              </div>
+              <div class="sc-bCztur ktLLwI">
+                <div class="sc-kpAHqd cKqiLx"><img src="http://localhost:8000/media/image_layers/Frame_1_3.png"></div>
+                <div class="sc-gvlNCs gFSjcr"></div>
+              </div>
+              <div class="sc-iXGjfC bwpPZU"><a href="https://ucea.org/gsc.php" target="_blank"
+                  class="sc-fkJXLl eBeuOj">Current Website</a><a href="https://ucea.org/graduate_student_council.php"
+                  target="_blank" class="sc-fkJXLl eBeuOj">Migrate from Memberleap</a><a
+                  href="https://web.archive.org/web/20230927223950/http://www.ucea.org/grad-student-focus/graduate-student-council/"
+                  target="_blank" class="sc-fkJXLl eBeuOj">Previous Website</a></div>
+            </div>
+          </div>
+          <div class="sc-dntaoT cSNdqs">
+            <div class="sc-cwJYja dtnORq">
+              <div class="sc-blHHSb cUrfAQ">
+                <h2 class="sc-gtLWhw dPOqbT">Example</h2>The complex UCEA application content was improved and
+                transformed into easy-to-understand flowcharts using Figma, increasing the membership application rate.
+              </div>
+              <div class="sc-bCztur ktLLwI">
+                <div class="sc-kpAHqd cKqiLx"><img src="http://localhost:8000/media/image_layers/MacBook_Air_-_1_1.png">
+                </div>
+                <div class="sc-gvlNCs gFSjcr"></div>
+              </div>
+              <div class="sc-iXGjfC bwpPZU"><a href="https://www.ucea.org/apply_for_ucea_member.php" target="_blank"
+                  class="sc-fkJXLl eBeuOj">Current Website</a><a
+                  href="https://web.archive.org/web/20230906164903/http://www.ucea.org/2014/07/30/institutional-membership/"
+                  target="_blank" class="sc-fkJXLl eBeuOj">Previous Website</a></div>
+            </div>
+          </div>
+          <div class="sc-dntaoT cSNdqs">
+            <div class="sc-cwJYja dtnORq">
+              <div class="sc-blHHSb cUrfAQ">
+                <h2 class="sc-gtLWhw dPOqbT">Example</h2>Under developing: Eliminate the inefficient management of
+                member data using Excel by building a backend system with Django, creating a member institution
+                database, and rendering it on the website with different content displayed based on user permissions.
+              </div>
+              <div class="sc-bCztur ktLLwI">
+                <div class="sc-kpAHqd cKqiLx"><img src="http://localhost:8000/media/image_layers/Frame_4_2.png"></div>
+                <div class="sc-gvlNCs gFSjcr"></div>
+              </div>
+              <div class="sc-iXGjfC bwpPZU"><a href="https://www.ucea.org/member_directory.php" target="_blank"
+                  class="sc-fkJXLl eBeuOj">Current Status</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+
+</body>
+
+</html>
