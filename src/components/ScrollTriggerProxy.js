@@ -8,16 +8,17 @@ const ScrollTriggerProxy = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    if (!scroll) return; // Ensure the scroll instance is available
+    if (!scroll || !scroll.el || !scroll.scroll) return; // 確保 scroll 實例已初始化
 
     const element = scroll.el;
 
     // Set up ScrollTrigger scrollerProxy
     ScrollTrigger.scrollerProxy(element, {
       scrollTop(value) {
-        return arguments.length
+        // 確保 scroll.instance 存在，否則返回 0
+        return arguments.length && scroll.scroll.instance
           ? scroll.scrollTo(value, 0, 0)
-          : scroll.scroll.instance.scroll.y;
+          : scroll.scroll?.instance?.scroll?.y || 0;
       },
       getBoundingClientRect() {
         return {

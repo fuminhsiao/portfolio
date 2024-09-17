@@ -115,7 +115,7 @@ const Prototype = ({ projectId }) => {
 
   useEffect(() => {
     if (projectId) {
-      fetch(`/api/pages/?project=${projectId}`)
+      fetch(`https://django-portfolio-k1kg.onrender.com/api/pages/?project=${projectId}`)
         .then((response) => {
           if (!response.ok) {
             throw new Error("Failed to fetch page data");

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";  // 使用 Link 來進行導航
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useLocomotiveScroll } from 'react-locomotive-scroll';
 
@@ -20,7 +20,6 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     color: #000;
-    cursor: pointer;
   }
 
   svg {
@@ -101,22 +100,41 @@ const Text = styled(motion.span)`
 `;
 
 const Banner = () => {
-  const { scroll } = useLocomotiveScroll();  // 使用 LocomotiveScroll 來處理滾動
-
+  const {scroll}=useLocomotiveScroll();
   const handleScroll = (id) => {
-    const elem = document.querySelector(id);
-    if (elem) {
+    const repoName = "/portfolio";  // 設置你的 repository 名稱
+    
+    if (window.location.pathname !== "/") {
+      // 如果不在首頁，跳轉到首頁並在首頁加載後滾動
+      window.location.href = `${repoName}/#project`;
+    } else {
+      let elem = document.querySelector(id);
       scroll.scrollTo(elem, {
-        duration: 2000,
+        duration: '2000',
         easing: [0.25, 0.0, 0.35, 1.0]
       });
     }
   };
+  const handleScroll2 = (id) => {
+    const repoName = "/portfolio";  // 設置你的 repository 名稱
+    
+    if (window.location.pathname !== "/") {
+      // 如果不在首頁，跳轉到首頁並在首頁加載後滾動
+      window.location.href = `${repoName}/#home`;
+    } else {
+      let elem = document.querySelector(id);
+      scroll.scrollTo(elem, {
+        duration: '2000',
+        easing: [0.25, 0.0, 0.35, 1.0]
+      });
+    }
+  };
+  
 
   return (
     <Container>
       <div>
-        <a onClick={() => handleScroll('#home')}>
+        <Link onClick={()=>handleScroll2('#project')}>
           <svg
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"
@@ -149,21 +167,21 @@ const Banner = () => {
           <Text variants={textVariants} initial="hidden" animate="visible">
             Designs of Fumin Hsiao
           </Text>
-        </a>
+        </Link>
       </div>
       <NavContainer>
         <MenuItems>
           <MenuItem
-            onClick={() => handleScroll('#project')}
+          onClick={()=>handleScroll('#project')}
             whileHover={{ scale: 1.1, y: -5 }}
-            whileTap={{ scale: 0.9, y: 0 }}
+            whileTap={{ scale: 0.9, Y: 0 }}
           >
             Project
           </MenuItem>
 
           <MenuItem
             whileHover={{ scale: 1.1, y: -5 }}
-            whileTap={{ scale: 0.9, y: 0 }}
+            whileTap={{ scale: 0.9, Y: 0 }}
           >
             Resume
           </MenuItem>

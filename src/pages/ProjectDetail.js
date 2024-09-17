@@ -4,7 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 import GlobalStyles from "../styles/GlobalStyles";
 import { ThemeProvider } from "styled-components";
 import { dark } from "../styles/Themes";
-import Banner from "../components/Banner";
+import Banner2 from "../components/Banner2";
 import ProjectBrief from "../projectSections/projectBrief";
 import Showcase from "../projectSections/Showcase";
 import DesignProcess from "../projectSections/DesignProcess";
@@ -26,13 +26,18 @@ const ProjectDetail = () => {
       { id: "showcase", Component: Showcase, height: "100vh", label: "Showcase" },
       { id: "design", Component: DesignProcess, height: "100vh", label: "Design Process" },
       { id: "defineproblem", Component: DefineProblem, height: "100vh", label: "Define Problem" },
-      { id: "gatherdata", Component: GatherData, height: "300vh", label: "Gather Data" }, // Set to 200vh
-      { id: "constructia", Component: ConstructIA, height: "200vh", label: "Construct IA" }, // Set to 200vh
-      { id: "prototype", Component: Prototype, height: "200vh", label: "Prototype" }, // Set to 200vh
-      { id: "development", Component: Development, height: "500vh", label: "Development" }, // Set to 500vh
+      { id: "gatherdata", Component: GatherData, height: "300vh", label: "Gather Data" },
+      { id: "constructia", Component: ConstructIA, height: "200vh", label: "Construct IA" },
+      { id: "prototype", Component: Prototype, height: "200vh", label: "Prototype" },
+      { id: "development", Component: Development, height: "500vh", label: "Development" },
     ],
     []
   );
+
+  // 确保每次进入页面时，滚动位置都在顶部
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Handling the custom scrolling behavior for navigation
   const handleNavClick = (index) => {
@@ -43,11 +48,9 @@ const ProjectDetail = () => {
       totalHeight += (parseInt(sections[i].height, 10) / 100) * viewportHeight;
     }
   
-    // 设置当前索引并重置子滚动索引
     setCurrentIndex(index);
     setSubScrollIndex(0);  // 每次点击导航时重置子滚动索引
   
-    // 手动滚动到目标位置
     controls.start({
       y: `-${totalHeight}px`,
       transition: { duration: 0.8, ease: [0.6, 0.05, -0.01, 0.9] },
@@ -135,7 +138,7 @@ const ProjectDetail = () => {
   return (
     <ThemeProvider theme={dark}>
       <GlobalStyles />
-      <Banner />
+      <Banner2 />
 
       {/* Navigation */}
       <nav style={navStyle}>

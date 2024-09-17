@@ -60,7 +60,7 @@ const ProjectBrief = ({ projectId }) => {
 
   useEffect(() => {
     // 使用 fetch 从 Django API 获取 ProjectBrief 数据
-    fetch(`/api/projectbriefs/`)
+    fetch("https://django-portfolio-k1kg.onrender.com/api/projectbriefs/")
       .then(response => response.json())
       .then(data => {
         // 检查是否有足够的数据来使用projectId - 1作为索引

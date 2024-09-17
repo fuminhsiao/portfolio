@@ -88,7 +88,7 @@ const DesignProcess = ({ projectId }) => {
 
   useEffect(() => {
     // 从 Django API 获取 DesignProcess 数据
-    fetch(`/api/design_processes/?project=${projectId}`)
+    fetch(`https://django-portfolio-k1kg.onrender.com/api/design_processes/?project=${projectId}`)
       .then(response => response.json())
       .then(data => setDesignProcess(data))
       .catch(error => console.error('Error fetching design process:', error));

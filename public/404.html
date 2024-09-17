@@ -1,0 +1,9 @@
+<script type="text/javascript">
+    // 檢查當前的 URL
+    var pathname = window.location.pathname;
+  
+    // 如果不是根目錄，則重定向到根目錄
+    if (!pathname.includes('/portfolio')) {
+      window.location.href = '/portfolio' + pathname;
+    }
+  </script>

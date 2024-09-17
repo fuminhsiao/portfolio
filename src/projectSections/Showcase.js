@@ -71,7 +71,7 @@ const Showcase = ({ projectId }) => {
 
   useEffect(() => {
     // 使用 fetch 从 Django API 获取 Showcase 数据
-    fetch(`/api/showcases/?project=${projectId}`)
+    fetch(`https://django-portfolio-k1kg.onrender.com/api/showcases/?project=${projectId}`)
       .then(response => response.json())
       .then(data => setShowcases(data))
       .catch(error => console.error('Error fetching showcases:', error));
